@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 source <(curl -fsSL https://raw.githubusercontent.com/bm-fez/ProxmoxVE/main/misc/build.func)
 
+set -x
+
 # An Azure DevOPs Pipelines version of MickLesk (CanbiZ) GitHub Action script for Proxmox
 # Original https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/github-runner.sh
 

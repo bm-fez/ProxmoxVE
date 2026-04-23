@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 source <(curl -fsSL https://raw.githubusercontent.com/bm-fez/ProxmoxVE/main/misc/build.func)
 
-set -x
-
 # An Azure DevOPs Pipelines version of MickLesk (CanbiZ) GitHub Action script for Proxmox
 # Original https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/github-runner.sh
 
-APP="Azure-DevOps-Agent"
+APP="ADO-Agent"
 var_tags="${var_tags:-ci}"
 var_cpu="${var_cpu:-2}"
 var_ram="${var_ram:-2048}"

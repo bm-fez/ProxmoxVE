@@ -63,4 +63,4 @@ msg_ok "Created Service"
 motd_ssh
 customize
 cleanup_lxc
-~/Downloads
+

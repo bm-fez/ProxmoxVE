@@ -26,13 +26,13 @@ msg_ok "Runner user ready"
 # fetch_and_deploy_gh_release "ado-agent" "microsoft/azure-pipelines-agent" "prebuild" "latest" "/opt/ado-agent" "vsts-agent-linux-x64-4.271.0.tar.gz"
 
 msg_info "Get tar.gz package"
-curl -fsSL https://download.agent.dev.azure.com/agent/4.272.0/vsts-agent-linux-x64-4.272.0.tar.gz -o ~/Downloads/vsts-agent-linux-x64-4.272.0.tar.gz
+curl -fsSL https://download.agent.dev.azure.com/agent/4.272.0/vsts-agent-linux-x64-4.272.0.tar.gz -o ~/vsts-agent-linux-x64-4.272.0.tar.gz
 
 msg_info "Create agent folder"
 mkdir -p /opt/ado-agent
 cd /opt/ado-agent
 msg_info "Extract agent folder"
-tar zxvf ~/Downloads/vsts-agent-linux-x64-4.272.0.tar.gz
+tar zxvf ~/vsts-agent-linux-x64-4.272.0.tar.gz
 
 msg_info "Setting ownership for runner user"
 chown -R runner:runner /opt/ado-agent
